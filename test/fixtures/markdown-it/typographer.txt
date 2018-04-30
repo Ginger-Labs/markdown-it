@@ -74,8 +74,12 @@ abc ----
 markdownit--awesome
 .
 <p>—markdownit — super—</p>
+<br>
 <p>markdownit—awesome</p>
+<br>
 <p>abc ----</p>
+<br>
 <p>–markdownit – super–</p>
+<br>
 <p>markdownit–awesome</p>
 .

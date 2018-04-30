@@ -18,9 +18,13 @@ Should not allow some protocols in links and images
 [xss link](file:///123)
 .
 <p>[xss link](javascript:alert(1))</p>
+<br>
 <p>[xss link](JAVASCRIPT:alert(1))</p>
+<br>
 <p>[xss link](vbscript:alert(1))</p>
+<br>
 <p>[xss link](VBSCRIPT:alert(1))</p>
+<br>
 <p>[xss link](file:///123)</p>
 .
 
@@ -35,8 +39,11 @@ Should not allow some protocols in links and images
 [xss link](\&#74;avascript:alert(1))
 .
 <p><a href="%22%3E%3Cscript%3Ealert(%22xss%22)%3C/script%3E">xss link</a></p>
+<br>
 <p>[xss link](Javascript:alert(1))</p>
+<br>
 <p><a href="&amp;#74;avascript:alert(1)">xss link</a></p>
+<br>
 <p><a href="&amp;#74;avascript:alert(1)">xss link</a></p>
 .
 
@@ -88,6 +95,7 @@ Autolinks
 <javascript:alert(1)>
 .
 <p>&lt;javascript:alert(1)&gt;</p>
+<br>
 <p>&lt;javascript:alert(1)&gt;</p>
 .
 
@@ -99,6 +107,7 @@ javascript&#x3A;alert(1)
 javascript:alert(1)
 .
 <p>javascript:alert(1)</p>
+<br>
 <p>javascript:alert(1)</p>
 .
 

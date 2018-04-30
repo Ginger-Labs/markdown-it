@@ -5,6 +5,7 @@ Should parse nested quotes:
 'foo 'bar' baz'
 .
 <p>“foo ‘bar’ baz”</p>
+<br>
 <p>‘foo ‘bar’ baz’</p>
 .
 
@@ -32,6 +33,7 @@ Should handle adjacent nested quotes:
 "'single in double'"
 .
 <p>‘“double in single”’</p>
+<br>
 <p>“‘single in double’”</p>
 .
 
@@ -46,7 +48,9 @@ Should not match quotes on different levels:
 *"foo* bar *baz"*
 .
 <p><em>&quot;foo</em> bar&quot;</p>
+<br>
 <p>&quot;foo <em>bar&quot;</em></p>
+<br>
 <p><em>&quot;foo</em> bar <em>baz&quot;</em></p>
 .
 
@@ -106,7 +110,9 @@ Quotes at the start/end of the tokens:
 "*foo bar*"
 .
 <p>“<em>foo</em> bar”</p>
+<br>
 <p>“foo <em>bar</em>”</p>
+<br>
 <p>“<em>foo bar</em>”</p>
 .
 
@@ -120,6 +126,7 @@ and "that".
 .
 <p>“this”
 and “that”.</p>
+<br>
 <p>“this” and
 “that”.</p>
 .
@@ -134,6 +141,7 @@ and "that".
 .
 <p>“this”<br>
 and “that”.</p>
+<br>
 <p>“this” and<br>
 “that”.</p>
 .

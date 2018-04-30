@@ -19,6 +19,7 @@ Issue #55:
 ![test](foo bar)
 .
 <p>![test]</p>
+<br>
 <p>![test](foo bar)</p>
 .
 
@@ -38,6 +39,7 @@ Should unescape only needed things in link destinations/titles:
 [test](foo "\\\"\b\a\r")
 .
 <p><a href="%5Cf%5Co%5Co%3E%5C">test</a></p>
+<br>
 <p><a href="foo" title="\&quot;\b\a\r">test</a></p>
 .
 
@@ -60,7 +62,9 @@ Escaping entities in links:
 [](<\\&quot;> "\\&quot;\\&ouml;")
 .
 <p><a href="%22" title="&amp;ö"></a></p>
+<br>
 <p><a href="&amp;quot;" title="&amp;amp;&amp;ouml;"></a></p>
+<br>
 <p><a href="%5C%22" title="\&quot;\ö"></a></p>
 .
 
@@ -197,6 +201,7 @@ Info string in fenced code block can't contain marker used for the fence
 ~~~test`
 .
 <p>~~~test~</p>
+<br>
 <pre><code class="test`"></code></pre>
 .
 
@@ -273,7 +278,9 @@ Coverage. Entities.
 *&amp;*
 .
 <p><em>&amp;</em></p>
+<br>
 <p><em> </em></p>
+<br>
 <p><em>&amp;</em></p>
 .
 
@@ -295,6 +302,7 @@ bar>)
 .
 <p>[foo](&lt;
 bar&gt;)</p>
+<br>
 <p>[foo](&lt;bar)</p>
 .
 
@@ -307,6 +315,7 @@ Coverage. parseLinkTitle
 z")
 .
 <p>[foo](bar &quot;ba)</p>
+<br>
 <p><a href="bar" title="ba\
 z">foo</a></p>
 .
@@ -324,6 +333,7 @@ Coverage. Image
 [bar]: 123
 .
 <p>![test][foo]</p>
+<br>
 .
 .
 ![test][[[
@@ -331,6 +341,7 @@ Coverage. Image
 [bar]: 123
 .
 <p>![test][[[</p>
+<br>
 .
 .
 ![test](
@@ -411,51 +422,62 @@ Coverage. Tabs in blockquotes.
 <pre><code>  test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <pre><code> test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <pre><code>test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <hr>
 <pre><code>  test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <hr>
 <pre><code> test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <hr>
 <pre><code>test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <pre><code>  	test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <pre><code> 	test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <pre><code>	test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <hr>
 <pre><code>  	test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <hr>
 <pre><code> 	test
 </code></pre>
 </blockquote>
+<br>
 <blockquote>
 <hr>
 <pre><code>	test
@@ -495,10 +517,12 @@ Coverage. Various tags not interrupting blockquotes because of indentation:
 <p>foo
 - - - -</p>
 </blockquote>
+<br>
 <blockquote>
 <p>foo
 # not a heading</p>
 </blockquote>
+<br>
 <blockquote>
 <p>foo
 <code>not a fence</code></p>

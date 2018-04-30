@@ -4,6 +4,7 @@
 [__proto__]: blah
 .
 <p><a href="blah"><strong>proto</strong></a></p>
+<br>
 .
 
 
@@ -13,4 +14,5 @@
 [hasOwnProperty]: blah
 .
 <p><a href="blah">hasOwnProperty</a></p>
+<br>
 .

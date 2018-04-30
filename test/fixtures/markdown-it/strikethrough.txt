@@ -28,6 +28,7 @@ x ~~a ~~foo~~~~~~~~~~~bar~~ b~~
 x ~~a ~~foo~~~~~~~~~~~~bar~~ b~~
 .
 <p>x <s>a <s>foo</s></s>~~~<s><s>bar</s> b</s></p>
+<br>
 <p>x <s>a <s>foo</s></s>~~~~<s><s>bar</s> b</s></p>
 .
 
@@ -39,6 +40,7 @@ Strikeouts have the same priority as emphases:
 ~~**test~~**
 .
 <p><strong>~~test</strong>~~</p>
+<br>
 <p><s>**test</s>**</p>
 .
 
@@ -50,6 +52,7 @@ Strikeouts have the same priority as emphases with respect to links:
 ~~[link~~]()
 .
 <p><a href="">~~link</a>~~</p>
+<br>
 <p>~~<a href="">link~~</a></p>
 .
 
@@ -61,6 +64,7 @@ Strikeouts have the same priority as emphases with respect to backticks:
 `~~code`~~
 .
 <p>~~<code>code~~</code></p>
+<br>
 <p><code>~~code</code>~~</p>
 .
 
@@ -72,6 +76,7 @@ Nested strikeouts:
 ~~f **o ~~o b~~ a** r~~
 .
 <p><s>foo <s>bar</s> baz</s></p>
+<br>
 <p><s>f <strong>o <s>o b</s> a</strong> r</s></p>
 .
 
@@ -98,8 +103,10 @@ test
 .
 <p>~~test
 ~~</p>
+<br>
 <p>~~
 test~~</p>
+<br>
 <p>~~
 test
 ~~</p>

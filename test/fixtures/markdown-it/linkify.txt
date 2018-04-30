@@ -45,6 +45,7 @@ test@example.com
 mailto:test@example.com
 .
 <p><a href="mailto:test@example.com">test@example.com</a></p>
+<br>
 <p><a href="mailto:test@example.com">mailto:test@example.com</a></p>
 .
 
